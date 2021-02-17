@@ -1,6 +1,7 @@
 # Interactive Weak Supervision: Learning Useful Heuristics for Data Labeling
-Code for text data experiments in:
-`Benedikt Boecking, Willie Neiswanger, Eric Xing, and Artur Dubrawski. “Interactive Weak Supervision: Learning Useful Heuristics for Data Labeling.” (2020).`
+Code for text data experiments in: 
+
+`Benedikt Boecking, Willie Neiswanger, Eric Xing, and Artur Dubrawski (2021). Interactive Weak Supervision: Learning Useful Heuristics for Data Labeling. International Conference on Learning Representations (ICLR).` https://arxiv.org/abs/2012.06046
 
 Please check out the `IWS.ipynb` notebook. The notebook will walk you through an example application of IWS from start to finish. You can choose to
 perform the experiment yourself, or to simulate an oracle which responds to queries about proposed labeling functions.  
