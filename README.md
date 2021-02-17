@@ -21,7 +21,7 @@ conda install -c conda-forge -c pytorch --file requirements/requirements_conda.t
 
 ## Data
 
-Download the data
+Download data to reproduce our text experiments
 ```
 cd datasets
 wget https://ndownloader.figshare.com/files/25732838?private_link=860788136944ad107def -O iws_datasets.tar.gz
@@ -29,7 +29,9 @@ tar -xzvf iws_datasets.tar.gz
 rm iws_datasets.tar.gz
 ```
 
-tar -xzvf archive.tar.gz
+Please see `datasets/README.md` for links and references to the original data sources and please cite the original sources where appropriate.  
+
+
 
 ## License
 
