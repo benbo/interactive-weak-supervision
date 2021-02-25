@@ -39,7 +39,7 @@ ENGLISH_SENTIMENT_STOP_WORDS = frozenset([
     "hereby", "herein", "hereupon", "hers", "herself", "him", "himself", "his",
     "how", "however", "hundred", "i", "ie", "if", "in", "inc", "indeed",
     "into", "is", "it", "its", "itself", "keep", "last", "latter",
-    "latterly", "least", "less", "ltd", "made", "many", "may", "me",
+    "latterly", "ltd", "made", "many", "may", "me",
     "meanwhile", "might", "mill", "mine", "more", "moreover", "most", "mostly",
     "move", "much", "must", "my", "myself", "name", "namely",
     "nevertheless", "next",
@@ -103,7 +103,7 @@ def generate_ngram_LFs(corpus, lftype, mindf=None, dname=None, labelmap=['negati
         descriptionunibi = ['contains term: %s. LF vote: %s' % (word, labelmap[1]) for word in vocablistunigrams]
         descriptionunibi += ['contains bigram: %s. LF vote: %s' % (word, labelmap[1]) for word in vocablistbigrams]
         descriptionunibi += ['contains term: %s. LF vote: %s' % (word, labelmap[0]) for word in vocablistunigrams]
-        descriptionunibi += ['contains bigram: %s. LF vote:  %s' % (word, labelmap[1]) for word in vocablistbigrams]
+        descriptionunibi += ['contains bigram: %s. LF vote:  %s' % (word, labelmap[0]) for word in vocablistbigrams]
 
         return sparse.hstack((LFuni, LFbi, LFunineg, LFbineg)), descriptionunibi
 
